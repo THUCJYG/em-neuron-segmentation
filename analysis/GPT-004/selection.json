@@ -1,0 +1,28 @@
+{
+  "source": "GPT",
+  "analysis_update": 4,
+  "network_update": 3,
+  "criterion": [
+    "F1_75",
+    "F1_50"
+  ],
+  "winner": {
+    "network": "gpt_v2_long",
+    "step": 3000,
+    "views": 8,
+    "seed_threshold": 0.5,
+    "min_seed_size": 32,
+    "merge_affinity": null,
+    "affinity_f1": 0.28243965535351473,
+    "F1_50": 0.6912751677852349,
+    "precision_50": 0.6782690498588899,
+    "recall_50": 0.7047898338220919,
+    "TP_50": 721,
+    "F1_75": 0.4582933844678811,
+    "precision_75": 0.44967074317968014,
+    "recall_75": 0.46725317693059626,
+    "TP_75": 478,
+    "gt_instances": 1023,
+    "predicted_instances": 1063
+  }
+}

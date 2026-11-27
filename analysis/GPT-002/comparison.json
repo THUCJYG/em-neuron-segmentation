@@ -1,0 +1,205 @@
+{
+  "source": "GPT",
+  "analysis_update": 2,
+  "network_update": 1,
+  "selected_run": "gpt_v1_dice",
+  "runs": {
+    "baseline_5000": {
+      "step": 4000,
+      "parameters": 121978,
+      "weights_sha256": "414c0a7d18eeb5460747ebaf5b1d574a38621c4d6c1bd579f58204ddf17e5787",
+      "training_seconds": 128.94088349834783,
+      "wall_seconds": 150.64433640002972,
+      "affinity_f1": 0.257276525025327,
+      "boundary_precision": 0.1513582531499486,
+      "boundary_recall": 0.8569749439160795,
+      "F1_50": 0.5901075268817204,
+      "precision_50": 0.5268817204301075,
+      "recall_50": 0.6705767350928641,
+      "F1_75": 0.3535483870967742,
+      "precision_75": 0.315668202764977,
+      "recall_75": 0.40175953079178883,
+      "gt_instances": 1023,
+      "predicted_instances": 1302,
+      "TP_50": 686,
+      "TP_75": 411
+    },
+    "gpt_v1_residual": {
+      "step": 5000,
+      "parameters": 129058,
+      "weights_sha256": "3f0ce8a0cb47bfc69765442b1fed812c8beb3473e3a88ce148a21df712c94c19",
+      "training_seconds": 182.2941644018283,
+      "wall_seconds": 211.99398090003524,
+      "affinity_f1": 0.23714343183296946,
+      "boundary_precision": 0.13611174989203045,
+      "boundary_recall": 0.9201238585737306,
+      "F1_50": 0.6335034013605442,
+      "precision_50": 0.5605718585402558,
+      "recall_50": 0.7282502443792767,
+      "F1_75": 0.3937074829931973,
+      "precision_75": 0.34838224228743414,
+      "recall_75": 0.4525904203323558,
+      "gt_instances": 1023,
+      "predicted_instances": 1329,
+      "TP_50": 745,
+      "TP_75": 463
+    },
+    "gpt_v1_aux": {
+      "step": 3000,
+      "parameters": 122011,
+      "weights_sha256": "fd6975e297679e00f4e1533cb71d90a9bc368db767e5ea6de211f7558401e723",
+      "training_seconds": 126.6446589002735,
+      "wall_seconds": 148.3245273999637,
+      "affinity_f1": 0.23519091881329302,
+      "boundary_precision": 0.135258011027175,
+      "boundary_recall": 0.9005339821163386,
+      "F1_50": 0.6512488436632747,
+      "precision_50": 0.6180860403863038,
+      "recall_50": 0.6881720430107527,
+      "F1_75": 0.3996299722479186,
+      "precision_75": 0.37928007023705007,
+      "recall_75": 0.4222873900293255,
+      "gt_instances": 1023,
+      "predicted_instances": 1139,
+      "TP_50": 704,
+      "TP_75": 432
+    },
+    "gpt_v1_full": {
+      "step": 3000,
+      "parameters": 129091,
+      "weights_sha256": "80548560d26ccd6fa492e2134500d5c401eeb840a2c1ff2669b2b1679aa92f08",
+      "training_seconds": 160.70743609871715,
+      "wall_seconds": 186.20905770000536,
+      "affinity_f1": 0.22605263853822977,
+      "boundary_precision": 0.12889059976282322,
+      "boundary_recall": 0.9182912572277165,
+      "F1_50": 0.627668659265585,
+      "precision_50": 0.5572403335860501,
+      "recall_50": 0.718475073313783,
+      "F1_75": 0.39880444064901793,
+      "precision_75": 0.35405610310841545,
+      "recall_75": 0.45650048875855326,
+      "gt_instances": 1023,
+      "predicted_instances": 1319,
+      "TP_50": 735,
+      "TP_75": 467
+    },
+    "gpt_v1_dice": {
+      "step": 3000,
+      "parameters": 129091,
+      "weights_sha256": "949230a444d392a1b341e517da3e7c6763799b336f39838e0e67fad18518f655",
+      "training_seconds": 165.3172303015599,
+      "wall_seconds": 191.77170390001265,
+      "affinity_f1": 0.282508720405851,
+      "boundary_precision": 0.16823351490185523,
+      "boundary_recall": 0.8808177193592215,
+      "F1_50": 0.6636071592473611,
+      "precision_50": 0.6254325259515571,
+      "recall_50": 0.7067448680351907,
+      "F1_75": 0.43139054612207434,
+      "precision_75": 0.40657439446366783,
+      "recall_75": 0.45943304007820135,
+      "gt_instances": 1023,
+      "predicted_instances": 1156,
+      "TP_50": 723,
+      "TP_75": 470
+    }
+  },
+  "diagnostics": {
+    "split": 45,
+    "merge": 34,
+    "small": 45,
+    "small_unmatched": 42
+  },
+  "improved_images_F1_75": 21,
+  "cases": {
+    "split": {
+      "case_id": "GPT-001-S01",
+      "image": "B_z030_y000_x000",
+      "crop_xyxy_exclusive": [
+        0,
+        0,
+        512,
+        260
+      ],
+      "baseline": {
+        "edges": 786,
+        "wrong": 74,
+        "mean_affinity": 0.7168088609489597,
+        "wrong_after_watershed": 786,
+        "objects": {
+          "10": {
+            "best_iou": 0.5995909928028291,
+            "best_iou_pred": 6,
+            "dominant_pred": 6,
+            "coverage": 0.5998892192215954
+          }
+        }
+      },
+      "update_1": {
+        "edges": 786,
+        "wrong": 97,
+        "mean_affinity": 0.8187696452626854,
+        "wrong_after_watershed": 263,
+        "objects": {
+          "10": {
+            "best_iou": 0.6913145539906104,
+            "best_iou_pred": 1,
+            "dominant_pred": 1,
+            "coverage": 0.6924476899946871
+          }
+        }
+      }
+    },
+    "merge": {
+      "case_id": "GPT-001-M01",
+      "image": "B_z070_y000_x000",
+      "crop_xyxy_exclusive": [
+        0,
+        0,
+        474,
+        512
+      ],
+      "baseline": {
+        "edges": 275,
+        "wrong": 186,
+        "mean_affinity": 0.6266381461675579,
+        "wrong_after_watershed": 275,
+        "objects": {
+          "6": {
+            "best_iou": 0.2481827622014538,
+            "best_iou_pred": 2,
+            "dominant_pred": 2,
+            "coverage": 0.9966694654352085
+          },
+          "23": {
+            "best_iou": 0.4432743835227076,
+            "best_iou_pred": 2,
+            "dominant_pred": 2,
+            "coverage": 0.9864393705646406
+          }
+        }
+      },
+      "update_1": {
+        "edges": 275,
+        "wrong": 192,
+        "mean_affinity": 0.68101247771836,
+        "wrong_after_watershed": 275,
+        "objects": {
+          "6": {
+            "best_iou": 0.31698388806255956,
+            "best_iou_pred": 6,
+            "dominant_pred": 6,
+            "coverage": 0.9960817240414218
+          },
+          "23": {
+            "best_iou": 0.5637216782722421,
+            "best_iou_pred": 6,
+            "dominant_pred": 6,
+            "coverage": 0.9841561246528849
+          }
+        }
+      }
+    }
+  }
+}

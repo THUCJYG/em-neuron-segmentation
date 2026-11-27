@@ -1,0 +1,36 @@
+{
+  "data": "C:\\Users\\CJYG\\Desktop\\作业\\2026秋 深度学习导论\\Project\\data",
+  "out": "runs\\gpt_v1_residual",
+  "steps": 5000,
+  "patch_size": 128,
+  "batch_size": 1,
+  "base_channels": 8,
+  "architecture": "residual_unet",
+  "aux_weight": 0.0,
+  "lr": 0.001,
+  "loss": "balanced_bce",
+  "device": "cpu",
+  "threads": 4,
+  "seed": 2026,
+  "val_every": 1000,
+  "log_every": 100,
+  "no_augment": false,
+  "decoder": {
+    "seed_threshold": 0.35,
+    "min_seed_size": 16,
+    "smooth_sigma": 0.6
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 36 Stepping 0, AuthenticAMD",
+    "logical_cpus": 24,
+    "torch_threads": 4,
+    "python": "3.12.16",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pillow": "13.0.0",
+    "timestamp": "2026-11-27T10:19:33+0800"
+  }
+}

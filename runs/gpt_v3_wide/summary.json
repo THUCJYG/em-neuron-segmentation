@@ -1,0 +1,21 @@
+{
+  "steps_completed": 5000,
+  "training_seconds": 288.24040409794543,
+  "wall_seconds": 331.0655713000451,
+  "best_validation_F1_75": 0.4365865157944366,
+  "best_validation_F1_50": 0.6628948609146629,
+  "under_two_hours": true,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 36 Stepping 0, AuthenticAMD",
+    "logical_cpus": 24,
+    "torch_threads": 4,
+    "python": "3.12.16",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pillow": "13.0.0",
+    "timestamp": "2026-11-27T10:49:15+0800"
+  }
+}

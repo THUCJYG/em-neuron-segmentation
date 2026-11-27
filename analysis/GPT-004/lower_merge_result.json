@@ -1,0 +1,32 @@
+{
+  "source": "GPT",
+  "analysis_update": 4,
+  "network_update": 3,
+  "validation": {
+    "decoder": {
+      "seed_threshold": 0.5,
+      "min_seed_size": 32,
+      "smooth_sigma": 0.6,
+      "core_threshold": 0.2,
+      "min_core_size": 256,
+      "rescue_core_size": 4
+    },
+    "F1_50": 0.6758436944937833,
+    "precision_50": 0.6192026037428804,
+    "recall_50": 0.7438905180840665,
+    "TP_50": 761,
+    "F1_75": 0.4502664298401421,
+    "precision_75": 0.41253051261187956,
+    "recall_75": 0.49560117302052786,
+    "TP_75": 507,
+    "gt_instances": 1023,
+    "predicted_instances": 1229,
+    "split": 72,
+    "merge": 23,
+    "small_unmatched": 43
+  },
+  "M01_dominant_predictions": {
+    "6": 5,
+    "23": 5
+  }
+}

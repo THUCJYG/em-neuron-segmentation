@@ -1,0 +1,8 @@
+{
+  "seed_threshold": 0.5,
+  "min_seed_size": 32,
+  "smooth_sigma": 0.6,
+  "core_threshold": 0.2,
+  "min_core_size": 256,
+  "rescue_core_size": 4
+}

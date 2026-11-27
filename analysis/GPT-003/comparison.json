@@ -1,0 +1,124 @@
+{
+  "source": "GPT",
+  "analysis_update": 3,
+  "network_update": 2,
+  "selected": "v2",
+  "runs": {
+    "v1": {
+      "step": 3000,
+      "parameters": 129091,
+      "weights_sha256": "949230a444d392a1b341e517da3e7c6763799b336f39838e0e67fad18518f655",
+      "training_seconds": 165.3172303015599,
+      "wall_seconds": 191.77170390001265,
+      "affinity_f1": 0.282508720405851,
+      "boundary_precision": 0.16823351490185523,
+      "boundary_recall": 0.8808177193592215,
+      "F1_50": 0.6636071592473611,
+      "precision_50": 0.6254325259515571,
+      "recall_50": 0.7067448680351907,
+      "F1_75": 0.43139054612207434,
+      "precision_75": 0.40657439446366783,
+      "recall_75": 0.45943304007820135,
+      "gt_instances": 1023,
+      "predicted_instances": 1156,
+      "TP_50": 723,
+      "TP_75": 470
+    },
+    "v2": {
+      "step": 3000,
+      "parameters": 129127,
+      "weights_sha256": "773f8f43dd3c1f1234a8b5a2b51ddca89d415f682f4853f4eae5f4f6259c3599",
+      "training_seconds": 177.93570749950595,
+      "wall_seconds": 203.24718549998943,
+      "affinity_f1": 0.2794950538290365,
+      "boundary_precision": 0.16571778195850742,
+      "boundary_recall": 0.891737495655471,
+      "F1_50": 0.6612758310871518,
+      "precision_50": 0.6118038237738986,
+      "recall_50": 0.7194525904203324,
+      "F1_75": 0.4348607367475292,
+      "precision_75": 0.4023275145469659,
+      "recall_75": 0.4731182795698925,
+      "gt_instances": 1023,
+      "predicted_instances": 1203,
+      "TP_50": 736,
+      "TP_75": 484
+    }
+  },
+  "counts": {
+    "v1": {
+      "split": 45,
+      "merge": 34,
+      "small": 45,
+      "small_unmatched": 42,
+      "small_tp50": 3
+    },
+    "v2": {
+      "split": 45,
+      "merge": 28,
+      "small": 45,
+      "small_unmatched": 42,
+      "small_tp50": 3
+    }
+  },
+  "cases": {
+    "split": {
+      "image": "B_z030_y000_x000",
+      "case_id": "GPT-001-S01",
+      "v1": {
+        "edges": 786,
+        "affinity_errors": 97,
+        "decoded_errors": 263,
+        "best_iou": {
+          "10": 0.6913145539906104
+        },
+        "dominant_pred": {
+          "10": 1
+        }
+      },
+      "v2": {
+        "edges": 786,
+        "affinity_errors": 114,
+        "decoded_errors": 191,
+        "best_iou": {
+          "10": 0.6444677681473456
+        },
+        "dominant_pred": {
+          "10": 1
+        }
+      }
+    },
+    "merge": {
+      "image": "B_z070_y000_x000",
+      "case_id": "GPT-001-M01",
+      "v1": {
+        "edges": 275,
+        "affinity_errors": 192,
+        "decoded_errors": 275,
+        "best_iou": {
+          "6": 0.31698388806255956,
+          "23": 0.5637216782722421
+        },
+        "dominant_pred": {
+          "6": 6,
+          "23": 6
+        }
+      },
+      "v2": {
+        "edges": 275,
+        "affinity_errors": 194,
+        "decoded_errors": 274,
+        "best_iou": {
+          "6": 0.2804339219257265,
+          "23": 0.5012668187898339
+        },
+        "dominant_pred": {
+          "6": 6,
+          "23": 6
+        }
+      }
+    }
+  },
+  "improved": 12,
+  "tied": 0
+}

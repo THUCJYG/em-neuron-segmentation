@@ -1,0 +1,69 @@
+{
+  "source": "GPT",
+  "update": 1,
+  "checkpoint_step": 4000,
+  "cases": {
+    "split": {
+      "primary": 10,
+      "parts": [
+        6,
+        7
+      ],
+      "pixels": [
+        53068,
+        24453
+      ],
+      "primary_area": 88463,
+      "part_areas": [
+        53112,
+        24607
+      ],
+      "image": "B_z030_y000_x000",
+      "interface_edges": 786,
+      "affinity_errors": 74,
+      "mean_p": 0.7168088609489597,
+      "case_id": "GPT-001-S01",
+      "seed_pixels_in_intersections": [
+        44729,
+        21677
+      ],
+      "crop_xyxy_exclusive": [
+        0,
+        0,
+        512,
+        260
+      ]
+    },
+    "merge": {
+      "primary": 2,
+      "parts": [
+        6,
+        23
+      ],
+      "pixels": [
+        35611,
+        63941
+      ],
+      "primary_area": 143368,
+      "part_areas": [
+        35730,
+        64820
+      ],
+      "image": "B_z070_y000_x000",
+      "interface_edges": 275,
+      "affinity_errors": 186,
+      "mean_p": 0.6266381461675579,
+      "case_id": "GPT-001-M01",
+      "seed_pixels_in_intersections": [
+        33693,
+        61334
+      ],
+      "crop_xyxy_exclusive": [
+        0,
+        0,
+        474,
+        512
+      ]
+    }
+  }
+}

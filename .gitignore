@@ -1,0 +1,22 @@
+# Local environments and credentials
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env*
+*.pem
+*.key
+*.pfx
+
+# Dataset files, checkpoints and generated predictions
+/data/*
+!/data/manifest.json
+/runs/**/predictions/
+*.pt
+*.pth
+*.ckpt
+
+# Local tooling
+.DS_Store
+Thumbs.db

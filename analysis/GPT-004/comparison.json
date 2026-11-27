@@ -1,0 +1,171 @@
+{
+  "source": "GPT",
+  "analysis_update": 4,
+  "network_update": 3,
+  "stage_one": {
+    "network": "gpt_v2_long",
+    "step": 3000,
+    "views": 8,
+    "seed_threshold": 0.5,
+    "min_seed_size": 32,
+    "merge_affinity": null,
+    "affinity_f1": 0.28243965535351473,
+    "F1_50": 0.6912751677852349,
+    "precision_50": 0.6782690498588899,
+    "recall_50": 0.7047898338220919,
+    "TP_50": 721,
+    "F1_75": 0.4582933844678811,
+    "precision_75": 0.44967074317968014,
+    "recall_75": 0.46725317693059626,
+    "TP_75": 478,
+    "gt_instances": 1023,
+    "predicted_instances": 1063
+  },
+  "chosen": {
+    "decoder": {
+      "seed_threshold": 0.5,
+      "min_seed_size": 32,
+      "smooth_sigma": 0.6
+    },
+    "F1_50": 0.6912751677852349,
+    "precision_50": 0.6782690498588899,
+    "recall_50": 0.7047898338220919,
+    "TP_50": 721,
+    "F1_75": 0.4582933844678811,
+    "precision_75": 0.44967074317968014,
+    "recall_75": 0.46725317693059626,
+    "TP_75": 478,
+    "gt_instances": 1023,
+    "predicted_instances": 1063,
+    "split": 46,
+    "merge": 41,
+    "small_unmatched": 45
+  },
+  "networks": {
+    "gpt_v2_long": {
+      "step": 3000,
+      "parameters": 129127,
+      "weights_sha256": "773f8f43dd3c1f1234a8b5a2b51ddca89d415f682f4853f4eae5f4f6259c3599",
+      "training_seconds": 177.93570749950595,
+      "wall_seconds": 203.24718549998943,
+      "affinity_f1": 0.2794950538290365,
+      "boundary_precision": 0.16571778195850742,
+      "boundary_recall": 0.891737495655471,
+      "F1_50": 0.6612758310871518,
+      "precision_50": 0.6118038237738986,
+      "recall_50": 0.7194525904203324,
+      "F1_75": 0.4348607367475292,
+      "precision_75": 0.4023275145469659,
+      "recall_75": 0.4731182795698925,
+      "gt_instances": 1023,
+      "predicted_instances": 1203,
+      "TP_50": 736,
+      "TP_75": 484
+    },
+    "gpt_v3_wide": {
+      "step": 5000,
+      "parameters": 514759,
+      "weights_sha256": "42e7f8269533a75461e388e2f79f158f9bad16505bed7c5e76c06a5ad31da442",
+      "training_seconds": 288.24040409794543,
+      "wall_seconds": 331.0655713000451,
+      "affinity_f1": 0.30453144468489735,
+      "boundary_precision": 0.18410852457066584,
+      "boundary_recall": 0.8803690479951973,
+      "F1_50": 0.6628948609146629,
+      "precision_50": 0.6402550091074681,
+      "recall_50": 0.6871945259042033,
+      "F1_75": 0.4365865157944366,
+      "precision_75": 0.4216757741347905,
+      "recall_75": 0.4525904203323558,
+      "gt_instances": 1023,
+      "predicted_instances": 1098,
+      "TP_50": 703,
+      "TP_75": 463
+    }
+  },
+  "counts": {
+    "v2": {
+      "split": 45,
+      "merge": 28,
+      "small": 45,
+      "small_unmatched": 42,
+      "small_tp50": 3
+    },
+    "v3": {
+      "split": 46,
+      "merge": 41,
+      "small": 45,
+      "small_unmatched": 45,
+      "small_tp50": 0
+    }
+  },
+  "cases": {
+    "split": {
+      "image": "B_z030_y000_x000",
+      "case_id": "GPT-001-S01",
+      "v2": {
+        "edges": 786,
+        "affinity_errors": 114,
+        "decoded_errors": 191,
+        "best_iou": {
+          "10": 0.6444677681473456
+        },
+        "dominant_pred": {
+          "10": 1
+        }
+      },
+      "v3": {
+        "edges": 786,
+        "affinity_errors": 91,
+        "decoded_errors": 323,
+        "best_iou": {
+          "10": 0.6609819294601175
+        },
+        "dominant_pred": {
+          "10": 1
+        }
+      }
+    },
+    "merge": {
+      "image": "B_z070_y000_x000",
+      "case_id": "GPT-001-M01",
+      "v2": {
+        "edges": 275,
+        "affinity_errors": 194,
+        "decoded_errors": 274,
+        "best_iou": {
+          "6": 0.2804339219257265,
+          "23": 0.5012668187898339
+        },
+        "dominant_pred": {
+          "6": 6,
+          "23": 6
+        }
+      },
+      "v3": {
+        "edges": 275,
+        "affinity_errors": 186,
+        "decoded_errors": 275,
+        "best_iou": {
+          "6": 0.2640345235067985,
+          "23": 0.47110500519827714
+        },
+        "dominant_pred": {
+          "6": 5,
+          "23": 5
+        }
+      }
+    }
+  },
+  "M01_seed_intersections": {
+    "6": {
+      "5": 34130
+    },
+    "23": {
+      "5": 61756
+    }
+  },
+  "improved": 18,
+  "tied": 1,
+  "release_sha256": "e06eaf7861791727f049a10608a4ef7d1bbb2567eac1cab9c22ea1bc851ea761"
+}
